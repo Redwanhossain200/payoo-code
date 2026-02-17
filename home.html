@@ -31,24 +31,24 @@
 </head>
 
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-
-  <div class="form pt-10">
-    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
-      <div class="card-body">
-        <fieldset class="fieldset">
-          <label class="label text-neutral font-bold">Mobile Number</label>
-          <input id="input-number" maxlength="11" minlength="11" type="text"
-            class="input rounded-full bg-base-200 border-none" placeholder="Enter your number" value="01234567890">
-          <br>
-          <label class="label text-neutral font-bold">4 Digit Pin</label>
-          <input id="input-pin" maxlength="4" minlength="4" type="password"
-            class="input rounded-full bg-base-200 border-none" placeholder="Enter 4 Digit Pin">
-          <button class="btn btn-primary mt-4 rounded-full" id="login-btn">Login</button>
-        </fieldset>
+  <header class="border-b-2 border-gray-300">
+    <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
+      <div class="left">
+        <div class="logo w-[60px]">
+          <img src="./assets/logo.png" alt="" class="cursor-pointer">
+        </div>
+        <div class="balace-info">
+          <h2 class="text-2xl font-bold">$ <span id="balance">45000</span></h2>
+        </div>
       </div>
-    </div>
-  </div>
-  <script src="./script/login.js"></script>
+      <div class="right">
+        <a href="./index.html" class="btn btn-soft"><span class="rotate-180"><i
+              class="fa-solid fa-arrow-right-from-bracket"></i>
+          </span> Log
+          Out</a>
+      </div>
+    </section>
+  </header>
 </body>
 
 </html>
