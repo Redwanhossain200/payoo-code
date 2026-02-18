@@ -22,7 +22,7 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
   const pin = getValueFromInput("cashout-pin")
   if (pin === '1234') {
     alert("Cashout Sccessful");
-    document.getElementById("balance").innerText = newBalance;
+    setBalance(newBalance);
   } else {
     alert("Invalid Amount");
     return;
