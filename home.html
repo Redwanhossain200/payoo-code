@@ -31,6 +31,7 @@
 </head>
 
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
+
   <header class="border-b-2 border-gray-300 sticky top-0 bg-base-200 z-50">
     <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
       <div class="left flex gap-1">
@@ -80,6 +81,47 @@
         <img src="./assets/opt-6.png" alt="">
         <p>Transactions</p>
       </button>
+    </div>
+  </section>
+
+  <section id="add-money" class="w-11/12 mx-auto py-5">
+    <h2 class="text-xl font-bold mb-5">Add Money</h2>
+    <div class="card bg-base-100 w-full shadow rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-neutral font-bold">Select A Bank</label>
+          <select class="select  rounded-full bg-base-200 border-none w-full">
+            <option disabled selected>Select back</option>
+            <option>Brac Bank</option>
+            <option>City Bank</option>
+            <option>Bank Asia</option>
+            <option>Rupali Bank</option>
+            <option>National Bank</option>
+            <option>Jamuna Bank</option>
+            <option>Islami Bank</option>
+            <option>Prime Bank</option>
+            <option>Eastern Bank</option>
+            <option>Pubali Bank</option>
+            <option>Trust Bank</option>
+            <option>One Bank</option>
+            <option>Dutch-Bangla Bank</option>
+            <option>United Commercial Bank</option>
+          </select>
+          <br>
+          <label class="label text-neutral font-bold">Bank Account Number</label>
+          <input id="cashout-number" type="text" class="input rounded-full bg-base-200 border-none w-full"
+            placeholder="Enter 11 digit account number" value="01234567890">
+          <br>
+          <label class="label text-neutral font-bold">Amount to Add</label>
+          <input id="cashout-amount" maxlength="11" minlength="11" type="number"
+            class="input rounded-full bg-base-200 border-none w-full" placeholder="Add Amount to withdraw">
+          <br>
+          <label class="label text-neutral font-bold">Pin Number</label>
+          <input id="cashout-pin" maxlength="4" minlength="4" type="password"
+            class="input rounded-full bg-base-200 border-none w-full" placeholder="Enter 4 digit pin number">
+          <button class="btn btn-primary mt-4 rounded-full" id="cashout-btn">Add Money</button>
+        </fieldset>
+      </div>
     </div>
   </section>
 
