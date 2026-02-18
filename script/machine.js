@@ -21,3 +21,18 @@ function setBalance(value) {
   const balanceElement = document.getElementById("balance");
   balanceElement.innerText = value;
 }
+
+// machine id > hide all > Show id 
+function showOnly(id) {
+  const addmoney = document.getElementById("add-money");
+  const cashout = document.getElementById("cashout");
+  // console.log(`add-money-${addmoney},cashout-${cashout}`);
+
+  // sobaike hide kore dao 
+  addmoney.classList.add("hidden");
+  cashout.classList.add("hidden");
+
+  // id wala element ta ke show kora
+  const selected = document.getElementById(id);
+  selected.classList.remove("hidden");
+}
