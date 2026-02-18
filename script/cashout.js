@@ -1,6 +1,5 @@
-// console.log();
-
 document.getElementById("cashout-btn").addEventListener("click", function () {
+
   // 1- get the agent number & validate
   const cashoutNumberInput = document.getElementById("cashout-number");
   const cashoutNumber = cashoutNumberInput.value;
