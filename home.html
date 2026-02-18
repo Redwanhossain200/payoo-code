@@ -90,42 +90,43 @@
       <div class="card-body">
         <fieldset class="fieldset">
           <label class="label text-neutral font-bold">Select A Bank</label>
-          <select class="select  rounded-full bg-base-200 border-none w-full">
+          <select id="add-money-bank" class="select rounded-full bg-base-200 border-none w-full">
             <option disabled selected>Select back</option>
-            <option>Brac Bank</option>
-            <option>City Bank</option>
-            <option>Bank Asia</option>
-            <option>Rupali Bank</option>
-            <option>National Bank</option>
-            <option>Jamuna Bank</option>
-            <option>Islami Bank</option>
-            <option>Prime Bank</option>
-            <option>Eastern Bank</option>
-            <option>Pubali Bank</option>
-            <option>Trust Bank</option>
-            <option>One Bank</option>
-            <option>Dutch-Bangla Bank</option>
-            <option>United Commercial Bank</option>
+            <option value="Brac">Brac Bank</option>
+            <option value="City">City Bank</option>
+            <option value="Bank Asia">Bank Asia</option>
+            <option value="Rupali">Rupali Bank</option>
+            <option value="National">National Bank</option>
+            <option value="Jamuna">Jamuna Bank</option>
+            <option value="Islami">Islami Bank</option>
+            <option value="United Commercial">United Commercial Bank</option>
+            <option value="Prime">Prime Bank</option>
+            <option value="Eastern">Eastern Bank</option>
+            <option value="Pubali">Pubali Bank</option>
+            <option value="Trust">Trust Bank</option>
+            <option value="One">One Bank</option>
+            <option value="Dutch-Bangla">Dutch-Bangla Bank</option>
           </select>
           <br>
           <label class="label text-neutral font-bold">Bank Account Number</label>
-          <input id="cashout-number" type="text" class="input rounded-full bg-base-200 border-none w-full"
-            placeholder="Enter 11 digit account number" value="01234567890">
+          <input maxlength="11" minlength="11" id="add-money-number" type="text"
+            class="input rounded-full bg-base-200 border-none w-full" placeholder="Enter 11 digit account number"
+            value="01234567890">
           <br>
           <label class="label text-neutral font-bold">Amount to Add</label>
-          <input id="cashout-amount" maxlength="11" minlength="11" type="number"
+          <input id="add-money-amount" maxlength="11" minlength="11" type="number"
             class="input rounded-full bg-base-200 border-none w-full" placeholder="Add Amount to withdraw">
           <br>
           <label class="label text-neutral font-bold">Pin Number</label>
-          <input id="cashout-pin" maxlength="4" minlength="4" type="password"
+          <input id="add-money-pin" maxlength="4" minlength="4" type="password"
             class="input rounded-full bg-base-200 border-none w-full" placeholder="Enter 4 digit pin number">
-          <button class="btn btn-primary mt-4 rounded-full" id="cashout-btn">Add Money</button>
+          <button class="btn btn-primary mt-4 rounded-full" id="add-money-btn">Add Money</button>
         </fieldset>
       </div>
     </div>
   </section>
 
-  <section id="cashout" class="w-11/12 mx-auto py-5">
+  <section id="cashout" class="w-11/12 mx-auto py-5 hidden">
     <h2 class="text-xl font-bold mb-5">Cashout</h2>
     <div class="card bg-base-100 w-full shadow rounded-2xl">
       <div class="card-body">
