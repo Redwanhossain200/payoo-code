@@ -9,32 +9,41 @@ function getValueFromInput(id) {
 }
 // machine -> balance()
 function getBalance() {
-  const balanceAmount = document.getElementById('balance');
+  const balanceAmount = document.getElementById("balance");
   const balance = balanceAmount.innerText;
-  console.log('Current Balance', Number(balance));
+  console.log("Current Balance", Number(balance));
   return Number(balance);
 }
 
 // machine value -> set balance
 
 function setBalance(value) {
-  const balanceElement = document.getElementById('balance');
+  const balanceElement = document.getElementById("balance");
   balanceElement.innerText = value;
 }
 
 // machine id > hide all > Show id
 function showOnly(id) {
-  const addmoney = document.getElementById('add-money');
-  const cashout = document.getElementById('cashout');
-  const history = document.getElementById('history');
-  // console.log(`add-money-${addmoney},cashout-${cashout}`);
+  const sections = [
+    "add-money",
+    "cashout",
+    "transfer-money",
+    "get-bonus",
+    "pay-bill",
+    "history",
+  ];
 
   // sobaike hide kore dao
-  addmoney.classList.add('hidden');
-  cashout.classList.add('hidden');
-  history.classList.add('hidden');
+  for (const sectionId of sections) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.classList.add("hidden");
+    }
+  }
 
   // id wala element ta ke show kora
   const selected = document.getElementById(id);
-  selected.classList.remove('hidden');
+  if (selected) {
+    selected.classList.remove("hidden");
+  }
 }
